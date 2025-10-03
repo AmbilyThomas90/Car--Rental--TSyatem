@@ -1,19 +1,49 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BsFillCarFrontFill } from "react-icons/bs";
+
 
 function Navbar() {
   return (
-    <>  <h1 className="text-xl font-bold"> Rentora Drive</h1>
-    <nav className="flex md:flex md:flex-grow flex-row-reverse space-x-1">
+    
+    		<div className="w-full flex flex-col text-white bg-gray-900 overflow-hidden">
+			<div className="m-4 w-full lg:px-[310px] px-1 flex items-center gap-5 justify-between ">
+        <div className="flex justify-items-center items-center gap-3">
+      <BsFillCarFrontFill className="text-2xl" />
+				<Link to='/'><h1 className="font-semibold whitespace-nowrap">Rentora Drive</h1></Link>
+        </div>
+        
+        <div className="flex mr-6">
+           <nav className="flex md:flex md:flex-grow flex-row-reverse space-x-1 gap-5">
        
-         <div className="space-x-4">
+         <div className="hidden lg:flex items-center justify-between gap-5">
+  <Link to="/home" className="hover:underline hover:text-blue-600 transition-colors">
+    Home
+  </Link>
+  <Link to="/about" className="hover:underline hover:text-blue-600 transition-colors">
+    About
+  </Link>
+  <Link to="/contact" className="hover:underline hover:text-blue-600 transition-colors">
+    Contact
+  </Link>
+</div>
+ </nav>
+      </div>
+</div>
+
+    </div>
+    
+    // <>  <h1 className="text-xl font-bold"> Rentora Drive</h1>
+    // <nav className="flex md:flex md:flex-grow flex-row-reverse space-x-1">
+       
+    //      <div className="space-x-4">
             
-       <Link to="/" className="hover:underline">Home</Link>
-       <Link to="/about" className="hover:underline">About</Link>
-      <Link to="/contact" className="hover:underline">Contact</Link>
-         </div>
-         </nav>
-    </>
+    //    <Link to="/" className="hover:underline">Home</Link>
+    //    <Link to="/about" className="hover:underline">About</Link>
+    //   <Link to="/contact" className="hover:underline">Contact</Link>
+    //      </div>
+    //      </nav>
+    // </>
        
   );
 }

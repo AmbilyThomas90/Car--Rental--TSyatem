@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  /*background-color: #F3F4F6; /* Tailwind's gray-100 equivalent */
+}

@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from"./components/Home";
 import About from"./components/About";
 import Contact from"./components/Contact";
+import HeroSlider from './components/HeroSlider';
 
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
 
     <Router>
          <Navbar />
+        
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
